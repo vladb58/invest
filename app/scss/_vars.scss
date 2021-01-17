@@ -1,0 +1,32 @@
+$accent: #F2C12C;
+$text: #102943;
+
+%rale-700{
+  font-family: 'Raleway-Bold', sans-serif;
+  font-weight: 700;
+}
+
+%rale-800{
+  font-family: 'Raleway-ExtraBold', sans-serif;
+  font-weight: 800;
+}
+
+%rale-600{
+  font-family: 'Raleway-SemiBold', sans-serif;
+  font-weight: 600;
+}
+
+%rale-400{
+  font-family: 'Raleway-Regular', sans-serif;
+  font-weight: 400;
+}
+
+%checkbox-hidden,
+%radio-hidden{
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  position: absolute;
+}
+
