@@ -10,9 +10,13 @@
   background-size: cover;
   background-position: center center;
   min-height: 100vh;
+  overflow: auto;
 }
 
 .header-top{
+  &__phone--hidden{
+    display: none;
+  }
   &__inner{
     display: flex;
     justify-content: space-between;
@@ -64,6 +68,8 @@
     border: 2px solid $accent;
     border-radius: 2px;
     cursor: pointer;
+    @extend %rale-600;
+    
   }
 }
 
@@ -112,6 +118,7 @@
     line-height: 23px;
     @extend %rale-600;
     cursor: pointer;
+    margin-bottom: 20px;
   }
 }
 
@@ -123,6 +130,7 @@
   &__inner{
     display: flex;
     justify-content: space-between;
+
   }
   &__item + .process__item{
     margin-left: 40px;
@@ -141,6 +149,9 @@
   background-position: center center;
   color: #fff;
   padding-bottom: 93px;
+  &__link{
+    display: none;
+  }
   &__title{
     padding: 109px 0 85px;
     color: #fff;
@@ -171,6 +182,15 @@
       border: 2px solid $accent;
       border-radius: 50%;
     }
+  }
+  &__list-img{
+    display: none;
+  }
+  &__link{
+    color: $accent;
+  }
+  .stages__link.stages__link--active{
+    display: none;
   }
 }
 
@@ -236,17 +256,17 @@
 .answers-consult{
   width: 555px;
   background-color: #F6F8FA;
-  padding-bottom: 46px;
+  padding: 67px 95px 46px;
   border-radius: 2px;
   &__title{
     font-size: 32px;
     line-height: 40px;
     text-align: center;
-    padding: 67px 0 28px;
+    padding-bottom: 28px;
   }
   &__text{
     text-align: center;
-    padding: 0 94px 40px 98px;
+    padding-bottom: 40px;
   }
   &__input{
     max-width: 365px;
@@ -254,8 +274,7 @@
     width: 100%;
     height: 65px;
     border: none;
-    margin-bottom: 20px;
-    margin-left: 95px;
+    margin: 0 auto 20px;
     color: #828282;
     padding: 0 27px;
   }
@@ -265,14 +284,15 @@
     border: none;
     display: block;
     cursor: pointer;
-    padding: 21px 135px 20px 127px;
-    margin: 0 auto;
+    padding: 21px 136px 20px 130px;
     margin-top: 35px;
     margin-bottom: 13px;
+    font-size: 18px;
+    line-height: 21px;
+    @extend %rale-600;
   }
   &__label{
     display: flex;
-    padding-left: 95px;
   }
   &__checkbox-text{
     font-size: 12px;

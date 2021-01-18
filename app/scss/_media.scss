@@ -1,0 +1,271 @@
+@media(max-width: 1470px){
+  .process{
+    &__inner{
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 58px;
+    }
+  }
+  .stages{
+    &__inner{
+      grid-template-columns: repeat(3, 1fr);
+      justify-items: center;
+    }
+  }
+  .answers{
+    padding-bottom: 0;
+    &__inner{
+      display: block;
+    }
+  }
+  .answers-questions{
+    margin-bottom: 100px;
+    width: 100%;
+  }
+  .answers-consult{
+    background-color: $text;
+    color: #fff;
+    &__wrapper{
+      background-color: $text;
+      display: flex;
+      justify-content: center;
+    }
+  }
+  .pluses{
+    
+    &__title{
+      text-align: center;
+      padding-top: 97px;
+    }
+    &__inner{
+      display: block;
+    }
+    &__img{
+      margin: 62px auto 0;
+    }
+  }
+  .pluses-content{
+    margin-right: 0;
+  }
+}
+
+@media(max-width: 1100px){
+  .footer-info{
+    &__item{
+      &:last-child{
+        display: none;
+      }
+    }
+  }
+}
+
+@media(max-width: 1025px){
+  .process{
+    &__inner{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+  }
+  .stages{
+    &__inner{
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+@media(max-width: 998px){
+  body{
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .header-top{
+    &__adress{
+      display: none;
+    }
+  }
+  .header-content{
+    &__title{
+      font-size: 32px;
+      line-height: 40px;
+    }
+  }
+  .test{
+    padding-bottom: 76px;
+    &__title{
+      font-size: 26px;
+      line-height: 36px;
+    }
+    &__img{
+      width: 90px;
+      height: 48px;
+    }
+  }
+}
+
+@media(max-width: 700px){
+  .logo-img{
+    width: 112px;
+    height: 64px;
+  }
+  .header-top{
+    &__phone--hidden{
+      display: flex;
+      justify-content: flex-end;
+      margin-top: 15px;
+    }
+    &__btn{
+      border: none;
+      padding: 0;
+    }
+    &__phone-icon{
+      margin-left: 12px;
+    }
+    &__phone{
+      display: none;
+    }
+  }
+
+  .title{
+    padding-top: 67px;
+  }
+  .process,
+  .stages{
+    padding-bottom: 67px;
+  }
+
+  .stages{
+    &__title{
+      padding-bottom: 42px;
+    }
+    &__inner{
+      grid-template-columns: repeat(1, 1fr);
+      gap: 16px;
+      justify-items: center;
+      text-align: center;
+    }
+    &__list{
+      padding-top: 0;
+      width: 294px;
+      &::before{
+        display: none;
+      }
+      &:nth-child(n+3){
+        display: none;
+      }
+    }
+    &__list-img{
+      display: inline-block;
+      margin-top: 10px;
+    }
+    &__link{
+      display: inline-block;
+    }
+  }
+}
+
+@media(max-width: 600px){
+  .answers-consult{
+    width: 100%;
+    &__btn{
+      padding: 20px 0;
+      width: 100%;
+    }
+  }
+  .footer{
+    text-align: center;
+    &__inner{
+      flex-direction: column;
+    }
+    &__logo{
+      order: 1;
+      margin-top: 88px;
+    }
+    &__logo-img{
+      width: 188px;
+      height: 107px;
+    }
+    
+  }
+  .footer-info{
+    display: block;
+    &__item{
+      & + .footer-info__item{
+        margin-left: 0;
+      }
+    }
+    &__item{
+      &:last-child{
+        display: block;
+      }
+    }
+  }
+}
+
+@media(max-width: 550px){
+  .pluses{
+    &__title{
+      padding: 67px 0 39px;
+    }
+  }
+  .header-content{
+    &__properties{
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 40px;
+    }
+    &__properties-item{
+      & + .header-content__properties-item{
+        margin-left: 0;
+        margin-top: 25px;
+      }
+    }
+    &__title{
+      font-size: 22px;
+      line-height: 28px;
+      text-align: center;
+      margin-bottom: 40px;
+      padding-top: 60px;
+    }
+    &__btn{
+      width: 100%;
+    }
+    &__text{
+      text-align: center;
+    }
+  }
+  .answers-consult{
+    padding: 67px 24px 46px;
+    &__input{
+      max-width: 100%;
+    }
+  }
+  .answers-questions{
+    &__title{
+      font-size: 18px;
+      line-height: 21px;
+    }
+    &__item-title{
+      padding-right: 40px;
+    }
+  }
+}
+
+@media(max-width: 400px){
+  .header-top{
+    &__inner{
+      padding-top: 25px;
+    }
+  }
+  .test{
+    padding-bottom: 61px;
+    &__title{
+      font-size: 20px;
+      line-height: 28px;
+    }
+    &__img{
+      width: 65px;
+      height: 35px;
+    }
+  }
+}
